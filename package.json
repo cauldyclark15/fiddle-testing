@@ -1,10 +1,26 @@
 {
-  "name": "REPLACE_ME",
+  "name": "fiddle-testing",
   "version": "1.0.0",
   "description": "Simple Hello World that listens on localhost:8080",
   "main": "server.js",
   "scripts": {
     "test": "echo \"no test specified\" && exit 0",
     "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cauldyclark15/fiddle-testing.git"
+  },
+  "keywords": [
+    "fiddle"
+  ],
+  "author": "cauldyclark15",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cauldyclark15/fiddle-testing/issues"
+  },
+  "homepage": "https://github.com/cauldyclark15/fiddle-testing#readme",
+  "dependencies": {
+    "express": "^4.16.3"
   }
 }
