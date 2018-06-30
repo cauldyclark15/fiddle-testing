@@ -1,9 +1,13 @@
-var express = require('express')
-var path = require('path')
+var express = require('express');
+var path = require('path');
 
-var server = express()
+var server = express();
 
-server.use(express.static(path.join(__dirname, 'dist')))
+server.use(express.static(path.join(__dirname, 'dist')));
+
+server.get('/api', function(req, res) {
+  res.json({ message: 'ok' });
+});
 
 // var http = require('http');
 // var fileSystem = require('fs');
@@ -23,5 +27,3 @@ server.use(express.static(path.join(__dirname, 'dist')))
 // });
 
 server.listen(8080);
-
-
